@@ -45,15 +45,9 @@ vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
 	// your code here
 	int height = grid.size();
 	int width = grid[0].size();
-	vector< vector <float> > newGrid(height, vector <float> (width,0.0));
 	int area = height*width;
-    
 	float belief_per_cell = 1.0/(float)area;
-	for(int i =0;i<height;i++){
-		for(int j=0;j<width;j++){
-			newGrid[i][j] = belief_per_cell;
-		}
-	}
+	vector< vector <float> > newGrid(height, vector <float> (width,belief_per_cell));
 	
 	return newGrid;
 }

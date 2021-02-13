@@ -62,6 +62,7 @@ You can test your code by running this function.
 Do that by first compiling this file and then 
 running the output.
 */
+/*
 int main() {
 	
  	vector < vector <char> > map;
@@ -94,3 +95,4 @@ int main() {
  	cout << "x, y = (" << simulation.true_pose[0] << ", " << simulation.true_pose[1] << ")" << endl;
  	return 0;
  }
+*/
